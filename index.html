@@ -3,19 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ex.css">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="profile-card">
-        <div class="profile-header"></div>
-        <div class="profile-avatar"></div>
-        <h2 class="profile-name">jane Doe</h2>
-        <p class="profile-bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-        <div class="profile-actions">
-            <button>Follow</button>
-            <button>Message</button>
+    <header>
+        <div class="titre"><h3>Mon portfolio</h3></div>
+        <nav id="haut">
+            <a href="#accueil">Accueil</a>
+            <a href="#propos">à propos de moi</a>
+            <a href="#compétences">Compétences</a>
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </header>
+
+    <div id="accueil" class="slider">
+        <div class="slider-content">
+            <div class="presentation">
+                <h1>Bonjour, je suis <br> 
+                    <span>ZOUNGRANA</span> <br>
+                    Waogwende Laeticia <br>
+                    Etudiante en <br>
+                    <span>licence Informatique Réseau & multimédia</span> <br>
+                     à SUPEMIR
+                </h1>
+            </div>
+            <div class="monimage">
+                <img 
+                src="maphoto.jpeg" 
+                alt="">
+            </div>
         </div>
-    </div> 
+    </div>
+
+    <div class="content">
+        <div id="propos" class="propos_de_moi">
+            <div id="propos_titre">
+                <h2>
+                    A <br> propos de moi
+                </h2>
+            </div>
+            <div class="infos">
+                <p>bonjour content de vous rencontrer,
+                    je suis Waogwende Laeticia ZOUNGRANA étudiante
+                    à SUPEMIR école en 1ère année de licence 
+                    Informatique, Réseau et Média.
+                    <br/>Je vous présente au travers de 
+                    cette page mon portfolio en espérant que 
+                    cela vous sera utile dans votre recherche.
+                    
+                    Si mon profile vous intéresse n'oubliez pas 
+                    de me contacter.<br/>
+                    Merci. 
+                    <br>
+                    <br>
+                    <br>
+                    <a href="contact.html">contact me</a>
+                </p>
+            </div>
+        </div>
+         
+        <div id="compétences" class="Compétences">
+            <h2>
+                Mes Compétences
+            </h2>
+            <div class="icone">
+                <div class="C1">
+                    <img  src="HTML.jpg">
+                    <h4>HTML</h4>
+                </div>
+                <div class="C1">
+                    <img  src="CSS.jpg">
+                    <h4>CSS</h4>
+                </div>
+                <div class="C1">
+                    <img   src="PS.jpg">
+                    <h4>Adobe Photoshop</h4>
+                </div>
+                <div class="C1">
+                    <img  src="CLI.jpg">
+                    <h4>CLI de linux</h4>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+        
+
+    <footer>
+        <h1>N'oubliez pas de me laisser un message</h1>       
+        <form action="traitement_form.php" method="post">
+            <label for="name">Nom (facultatif):</label>
+            <input type="text" id="name" name="name">
+    
+            <label for="email">E-mail (facultatif):</label>
+            <input type="email" id="email" name="email">
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">Envoyer</button>
+        </form>
+        <h1>Merci, et à bientôt </h1>
+        <h5><a href="#haut">Aller en haut de page</a></h5>
+    </footer>
 </body>
 </html>
